@@ -7,8 +7,15 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+	<div class="navbar navbar-static-top">
+			<a href="#" class="navbar-brand"> Your Epic Life</a>
+			<ul class="nav">
+				<li><%= link_to "All Statuses", statuses_path %></li>
+			</ul>
+	</div>
+	<div class="container">
 
-<%= yield %>
-
+		<%= yield %>
+	</div>
 </body>
 </html>
